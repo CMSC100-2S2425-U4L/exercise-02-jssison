@@ -1,121 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel = "stylesheet" href = "style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <title>Exercise 02: HTML and CSS</title>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-                background-color: #D8D9DA;
-            }
-            header{
-                padding-top: 5px;
-                padding-bottom: 20px;
-                background-color: #272829;
-                color: #FFF6E0;
-                font-family: 'Bebas Neue', serif;
-                font-style: normal;
-                font-weight: 200;
-                letter-spacing: 10px;
-            }
-            nav{
-                display: flex;
-                justify-content: space-around;
-                background-color: #333436;
-                padding: 10px;
-            }
-            nav a{
-                color: #D8D9DA;
-                letter-spacing: 4px;
-            }
-            nav a:hover{
-                color: #61677A;
-            }
-            footer{
-                font-family: 'Roboto-Slab', serif;
-                font-weight: 200;
-                font-style: normal;
-                font-optical-sizing: auto;
-                justify-content: center;
-                text-align: center;
-                background-color: #272829;
-                color: #FFF6E0;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%
-            }
-            footer a{
-                color:#D8D9DA;
-            }
-            footer a:hover{
-                color:#61677A;
-            }
-            main{
-                justify-content: center;
-                font-family: 'Roboto-Slab', serif;
-                font-weight: 500;
-                font-style: normal;
-                font-optical-sizing: auto;
-                text-align: center;
-            }
-            .photo{
-                justify-content: center;
-                border: 2px solid #333436;
-                border-radius: 20px;
-                background-color: #333436;
-                height: 500px;
-                margin-left: 100px;
-                margin-right: 100px;
-            }
-            .container{
-                display: flex;
-            }
-            .skills{
-                justify-content: center;
-                border: 2px solid #333436;
-                border-radius: 20px;
-                background-color: #333436;
-                height: 300px;
-                width: 50%;
-                margin: 100px;
-            }
-            .autobiography{
-                justify-content: center;
-                border: 2px solid #333436;
-                border-radius: 20px;
-                background-color: #333436;
-                width: 50%;
-                height: 300px;
-                margin: 100px;
-            }
-        </style>
     </head>
     <body>
         <header>
-            <h1><center>Logo and Nav Bar</center></h1>
+            <center><img id = "logo" src = "logo.png"></center>
             <nav>
-                <center><a id = "nav1" href = "#header">GitHub</a></center>
-                <center><a id = "nav2" href = "#header">Nav2</a></center>
-                <center><a id = "nav3" href = "#header">Nav3</a></center>
-                <center><a id = "nav4" href = "#header">Nav4</a></center>
+                <center><a id = "nav1" href = "https://github.com/jssison">GitHub Profile</a></center>
+                <center><a id = "nav2" href = "#skills">skills</a></center>
+                <center><a id = "nav3" href = "#autobiography">Autobiography</a></center>
             </nav>
         </header>
         <main>
-            <h2>Featured Photo</h2>
             <div class = "photo">
+                <div id = "picture">
 
+                </div>
+                <div>
+                    <h1 id = "title-p">Featured</h1>
+                    <h2 id = "title-p2">Photo</h2>
+                    <p id = "photo-desc">Some text about the photo.</p>
+                </div>
+                
             </div>
-            <div class = "container">
-                <div class = "skills">
+            <div class = "skills" id = "skills">
+                <div>
+                    <h1 id = "title-s">Skills</h1>
+                    <ul id = "skills-list">
+                        <li>Skills here</li>
+                    </ul>
+                </div>
+                <div id = "picture-s">
 
                 </div>
-                <div class = "autobiography">
+                
+            </div>
+            <div class = "autobiography" id = "autobiography">
 
-                </div>
             </div>
         </main>
         <footer>
