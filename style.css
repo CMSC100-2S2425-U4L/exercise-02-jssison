@@ -183,7 +183,9 @@ main{
     font-size: 25px;
     text-align: center;
     margin-top: -50px;
+    margin-left: -80px;
     color:#FFF6E0;
+    line-height: 170%;
 }
 #logo{
     height: 80px;
